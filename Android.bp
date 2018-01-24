@@ -246,8 +246,22 @@ cc_library_shared {
     ],
 
     required: [
+        "libtextclassifier_annotator_ar_model",
         "libtextclassifier_annotator_en_model",
+        "libtextclassifier_annotator_es_model",
+        "libtextclassifier_annotator_fr_model",
+        "libtextclassifier_annotator_it_model",
+        "libtextclassifier_annotator_ja_model",
+        "libtextclassifier_annotator_ko_model",
+        "libtextclassifier_annotator_nl_model",
+        "libtextclassifier_annotator_pl_model",
+        "libtextclassifier_annotator_pt_model",
+        "libtextclassifier_annotator_ru_model",
+        "libtextclassifier_annotator_th_model",
+        "libtextclassifier_annotator_tr_model",
         "libtextclassifier_annotator_universal_model",
+        "libtextclassifier_annotator_zh_model",
+        "libtextclassifier_annotator_zh-Hant_model",
         "libtextclassifier_actions_suggestions_universal_model",
         "libtextclassifier_lang_id_model",
     ],
@@ -294,6 +308,15 @@ cc_test {
 // Annotator models
 // ----------------
 
+
+prebuilt_etc {
+    name: "libtextclassifier_annotator_ar_model",
+    filename: "textclassifier.ar.model",
+    owner: "google",
+    src: "models/textclassifier.ar.model",
+    sub_dir: "textclassifier",
+}
+
 prebuilt_etc {
     name: "libtextclassifier_annotator_en_model",
     filename: "textclassifier.en.model",
@@ -303,10 +326,114 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "libtextclassifier_annotator_es_model",
+    filename: "textclassifier.es.model",
+    owner: "google",
+    src: "models/textclassifier.es.model",
+    sub_dir: "textclassifier",
+}
+
+prebuilt_etc {
+    name: "libtextclassifier_annotator_fr_model",
+    filename: "textclassifier.fr.model",
+    owner: "google",
+    src: "models/textclassifier.fr.model",
+    sub_dir: "textclassifier",
+}
+
+prebuilt_etc {
+    name: "libtextclassifier_annotator_it_model",
+    filename: "textclassifier.it.model",
+    owner: "google",
+    src: "models/textclassifier.it.model",
+    sub_dir: "textclassifier",
+}
+
+prebuilt_etc {
+    name: "libtextclassifier_annotator_ja_model",
+    filename: "textclassifier.ja.model",
+    owner: "google",
+    src: "models/textclassifier.ja.model",
+    sub_dir: "textclassifier",
+}
+
+prebuilt_etc {
+    name: "libtextclassifier_annotator_ko_model",
+    filename: "textclassifier.ko.model",
+    owner: "google",
+    src: "models/textclassifier.ko.model",
+    sub_dir: "textclassifier",
+}
+
+prebuilt_etc {
+    name: "libtextclassifier_annotator_nl_model",
+    filename: "textclassifier.nl.model",
+    owner: "google",
+    src: "models/textclassifier.nl.model",
+    sub_dir: "textclassifier",
+}
+
+prebuilt_etc {
+    name: "libtextclassifier_annotator_pl_model",
+    filename: "textclassifier.pl.model",
+    owner: "google",
+    src: "models/textclassifier.pl.model",
+    sub_dir: "textclassifier",
+}
+
+prebuilt_etc {
+    name: "libtextclassifier_annotator_pt_model",
+    filename: "textclassifier.pt.model",
+    owner: "google",
+    src: "models/textclassifier.pt.model",
+    sub_dir: "textclassifier",
+}
+
+prebuilt_etc {
+    name: "libtextclassifier_annotator_ru_model",
+    filename: "textclassifier.ru.model",
+    owner: "google",
+    src: "models/textclassifier.ru.model",
+    sub_dir: "textclassifier",
+}
+
+prebuilt_etc {
+    name: "libtextclassifier_annotator_th_model",
+    filename: "textclassifier.th.model",
+    owner: "google",
+    src: "models/textclassifier.th.model",
+    sub_dir: "textclassifier",
+}
+
+prebuilt_etc {
+    name: "libtextclassifier_annotator_tr_model",
+    filename: "textclassifier.tr.model",
+    owner: "google",
+    src: "models/textclassifier.tr.model",
+    sub_dir: "textclassifier",
+}
+
+prebuilt_etc {
     name: "libtextclassifier_annotator_universal_model",
     filename: "textclassifier.universal.model",
     owner: "google",
     src: "models/textclassifier.universal.model",
+    sub_dir: "textclassifier",
+}
+
+prebuilt_etc {
+    name: "libtextclassifier_annotator_zh_model",
+    filename: "textclassifier.zh.model",
+    owner: "google",
+    src: "models/textclassifier.zh.model",
+    sub_dir: "textclassifier",
+}
+
+prebuilt_etc {
+    name: "libtextclassifier_annotator_zh-Hant_model",
+    filename: "textclassifier.zh-Hant.model",
+    owner: "google",
+    src: "models/textclassifier.zh-Hant.model",
     sub_dir: "textclassifier",
 }
 
